@@ -19,9 +19,9 @@ namespace ConsoleApp2
            /* Console.WriteLine("Zadaj radius: ");
             r = double.Parse(Console.ReadLine());
             Console.WriteLine("Zadaj vysku: ");
-            v = double.Parse(Console.ReadLine());*/
+            v = double.Parse(Console.ReadLine());
 
-            for (int i = 0; i < 5; i++)
+           for (int i = 0; i < 5; i++)
             {
                 Console.WriteLine("Zadaj radius: ");
                 r = double.Parse(Console.ReadLine());
@@ -33,8 +33,14 @@ namespace ConsoleApp2
             }
             Console.WriteLine("Celkovy objem: " + celkovy);
 
-           /* V = ((Math.PI / 3) * (r * r) * v);
+            V = ((Math.PI / 3) * (r * r) * v);
             Console.WriteLine("Objem je: " + V); */
+
+            Strom strom1 = new Strom();
+            strom1.r = 5;
+            strom1.v = 6;
+            Console.WriteLine("Volume: " + strom1.Volume);
+
             
 
             Console.ReadKey();  
