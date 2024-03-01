@@ -6,10 +6,20 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp3
 {
-    public class Vetva : Strom
+
+
+    public abstract class Strom : IOrganizmus
     {
         public double vyska;
         public double priemer;
+        public double prirastokVyskyZaRok = 0.02;
+        public double prirastokSirkyZaRok = 0.0001;
+        List<Vetva> vetvy = new List<Vetva>();
+        List<Vetva>();
+        Dictionary<Coordinate, Vetva>();
+
+
+        public Strom() { }
 
         public virtual double Vypocet
         {
@@ -21,8 +31,11 @@ namespace ConsoleApp3
             vyska += prirastokVyskyZaRok;
             priemer += prirastokSirkyZaRok;
 
+            Vetva v1 = new Vetva();
             Console.WriteLine("Vyska: {0}\nPriemer: {1}", vyska, priemer);
         }
 
+
     }
+
 }

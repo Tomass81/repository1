@@ -17,7 +17,8 @@ namespace ConsoleApp3
             double.TryParse(Console.ReadLine(), out v);
             Console.WriteLine("Zadajte priemer ");
             double.TryParse(Console.ReadLine(), out r);
-
+            
+            
             /*double V = (1.0 / 3.0 * Math.PI * (r * r) * v);
             Console.WriteLine("Objem stromu: " + V);
 
@@ -56,7 +57,7 @@ namespace ConsoleApp3
             else if (a == 3)
             {
 
-                ListnatyStrom listnaty_strom = new ListnatyStrom();
+                ListStrom listnaty_strom = new ListStrom();
                 listnaty_strom.vyska = v;
                 listnaty_strom.priemer = r;
                 Console.WriteLine(listnaty_strom.Vypocet);
